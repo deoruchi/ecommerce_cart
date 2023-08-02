@@ -1,23 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useState } from "react";
+import DetailSection from "./ProductDetailPage/DetailSection";
+import Cart from "./ProductDetailPage/Cart";
+import ProductImage from "./ProductDetailPage/ProductImage";
+import NavBar from "./ProductDetailPage/NavBar";
 function App() {
+  const [data, setData] = useState({
+    cart: [],
+  });
+  /**cart{
+   * cardId:"",
+   * count:"",
+   * price:"",
+   * images:"",
+   * heading:""
+   * } */
+
+  function addintoCart(cardifo) {
+    setData((datas) => {
+      return {
+        ...datas,
+        cart: [...datas.cart, cardifo],
+      };
+    });
+  }
+
+  function removeFromCart(cardID) {
+    setData((datas) => {
+      return {
+        ...datas,
+        cart: datas.cart.filter((items) => {
+          return items.cardId !== cardID;
+        }),
+      };
+    });
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <ProductImage />
+      <DetailSection addCart={addintoCart} />
+      {/* <Cart cartData={data} /> */}
     </div>
   );
 }
