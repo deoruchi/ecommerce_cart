@@ -1,13 +1,24 @@
 {
   "files": {
-    "main.css": "/ecommerce_cart/static/css/main.5df326e4.css",
-    "main.js": "/ecommerce_cart/static/js/main.c54fa8ed.js",
+    "main.css": "/ecommerce_cart/static/css/main.308cd645.css",
+    "main.js": "/ecommerce_cart/static/js/main.b0931439.js",
+    "static/media/image-product-2.jpg": "/ecommerce_cart/static/media/image-product-2.c8bb0aaccecdebb16596.jpg",
+    "static/media/image-product-1.jpg": "/ecommerce_cart/static/media/image-product-1.520cc50bd13955f55cb2.jpg",
+    "static/media/image-product-3.jpg": "/ecommerce_cart/static/media/image-product-3.af5c71ba9ffcc0b8b54d.jpg",
+    "static/media/image-product-4.jpg": "/ecommerce_cart/static/media/image-product-4.9962862ef3eff6d65e5b.jpg",
+    "static/media/logo.svg": "/ecommerce_cart/static/media/logo.4fe9c1e86cf9bf600f0c239f6a6e5317.svg",
+    "static/media/icon-delete.svg": "/ecommerce_cart/static/media/icon-delete.1fd1f1f7d9f8ce5557b44ca3470a18b8.svg",
     "index.html": "/ecommerce_cart/index.html",
-    "main.5df326e4.css.map": "/ecommerce_cart/static/css/main.5df326e4.css.map",
-    "main.c54fa8ed.js.map": "/ecommerce_cart/static/js/main.c54fa8ed.js.map"
+    "static/media/icon-cart.svg": "/ecommerce_cart/static/media/icon-cart.539ec608f50e707c94d583ec11acf99d.svg",
+    "static/media/icon-plus.svg": "/ecommerce_cart/static/media/icon-plus.b297868c5f938612f4f099f9f9d73aea.svg",
+    "static/media/icon-minus.svg": "/ecommerce_cart/static/media/icon-minus.f5073aa8273785ecf6b7811630782736.svg",
+    "static/media/icon-close.svg": "/ecommerce_cart/static/media/icon-close.c390448669f3a8a4c4b2ada2f9938959.svg",
+    "static/media/icon-menu.svg": "/ecommerce_cart/static/media/icon-menu.c6107d03f1edcf73523ebd8cbc50a443.svg",
+    "main.308cd645.css.map": "/ecommerce_cart/static/css/main.308cd645.css.map",
+    "main.b0931439.js.map": "/ecommerce_cart/static/js/main.b0931439.js.map"
   },
   "entrypoints": [
-    "static/css/main.5df326e4.css",
-    "static/js/main.c54fa8ed.js"
+    "static/css/main.308cd645.css",
+    "static/js/main.b0931439.js"
   ]
 }
