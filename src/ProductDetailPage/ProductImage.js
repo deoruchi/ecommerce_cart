@@ -9,15 +9,18 @@ import Img3th from "../images/image-product-3-thumbnail.jpg";
 import Img4th from "../images/image-product-4-thumbnail.jpg";
 import { useState } from "react";
 import Image from "./Image";
+import { Image2 } from "./Image2";
+
 export default function ProductImage() {
   const [image, setImage] = useState(Img1);
   return (
     <>
       <section>
         {/* thumnail images */}
-        <div>
-          <img src={image} width="350px" className="rounded-lg"></img>
-        </div>
+        <Image2 name={image}></Image2>
+
+        {/* <Crousal /> */}
+
         {/* images  */}
 
         <div className="hidden md:flex md:justify-between md:items-center md:my-5">

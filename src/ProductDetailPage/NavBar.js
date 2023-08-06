@@ -7,7 +7,7 @@ import Cart from "./Cart";
 import { useState } from "react";
 export default function NavBar({ cartData, remove }) {
   const [toggle, setToggle] = useState(false);
-  const [cartToggle, setCartToggle] = useState(false);
+  const [cartToggle, setCartToggle] = useState(true);
 
   return (
     <>
@@ -57,8 +57,20 @@ export default function NavBar({ cartData, remove }) {
         {/* <button>Cart</button> */}
         {/* profilte pic */}
         <div className="flex md:flex-row md:items-center cursor-pointer">
-          <button className="px-4" onClick={() => setCartToggle(!cartToggle)}>
+          <button
+            className="px-5 relative"
+            onClick={() => setCartToggle(!cartToggle)}
+          >
             <img src={Carticon} />
+            <div
+              className={
+                cartData.cart.length
+                  ? "absolute md:-top-4 -top-1 right-2 bg-red-500 text-white p-1 text-sm rounded-full"
+                  : ""
+              }
+            >
+              {cartData.cart.length ? cartData.cart.length : ""}
+            </div>
           </button>
           <img src={Profile} className="w-12"></img>
         </div>
