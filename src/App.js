@@ -4,9 +4,6 @@ import Cart from "./ProductDetailPage/Cart";
 import ProductImage from "./ProductDetailPage/ProductImage";
 import NavBar from "./ProductDetailPage/NavBar";
 function App() {
-  const [data, setData] = useState({
-    cart: [],
-  });
   /**cart{
    * cardId:"",
    * count:"",
@@ -15,6 +12,11 @@ function App() {
    * heading:""
    * } */
 
+  const [data, setData] = useState({
+    cart: [],
+  });
+
+  //add items into the cart
   function addintoCart(cardifo) {
     const index = data.cart.findIndex((items) => {
       return items.cardId == cardifo.cardId;
@@ -42,6 +44,8 @@ function App() {
       });
     }
   }
+
+  //remove item from the card
   function removeFromCart(cardID) {
     setData((datas) => {
       return {

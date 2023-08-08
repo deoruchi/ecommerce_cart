@@ -19,8 +19,6 @@ export default function ProductImage() {
         {/* thumnail images */}
         <Image2 name={image}></Image2>
 
-        {/* <Crousal /> */}
-
         {/* images  */}
 
         <div className="hidden md:flex md:justify-between md:items-center md:my-5">
